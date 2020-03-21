@@ -1,1 +1,2 @@
-web: gunicorn --bind 0.0.0.0:$PORT corona:app
+web: gunicorn corona:app
+web: gunicorn run:app
