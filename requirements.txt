@@ -137,3 +137,4 @@ yarl==1.4.2
 zipp==3.0.0
 distribute==0.6.24
 gunicorn==0.14.2
+setuptools==40.8.0
