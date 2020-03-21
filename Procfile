@@ -1,1 +1,1 @@
-web: gunicorn covid-live-update:app
+web: gunicorn covid:app
