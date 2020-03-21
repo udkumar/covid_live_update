@@ -1,1 +1,1 @@
-web: gunicorn covid:app
+web: gunicorn app:app
