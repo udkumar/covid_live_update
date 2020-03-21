@@ -19,6 +19,10 @@ def parse_data(url):
 	new_df = df[0]
 	return new_df
 
+@app.route("/")
+def index():
+    return render_template("index.html")
+    
 @app.route("/covid_india", methods=['GET'])
 def in_live():
     url = urlArray[0]
@@ -51,9 +55,6 @@ def world_data():
     data =  {'country_labels': country_labels,'total_cases': total_cases,'new_cases': new_cases,'total_deaths': total_deaths,'new_deaths': new_deaths,'total_recovered': total_recovered,'active_cases': active_cases,'critical': critical}
     return make_response(jsonify(data), 200)
 
-@app.route("/")
-def index():
-    return render_template("index.html")
 
 if __name__ == "__main__":
 	app.run(threaded=True, port=5000)
