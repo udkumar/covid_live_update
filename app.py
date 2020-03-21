@@ -22,7 +22,7 @@ def parse_data(url):
 @app.route("/")
 def index():
     return render_template("index.html")
-    
+
 @app.route("/covid_india", methods=['GET'])
 def in_live():
     url = urlArray[0]
@@ -57,4 +57,4 @@ def world_data():
 
 
 if __name__ == "__main__":
-	app.run(threaded=True, port=5000)
+	app.run(threaded=True)
