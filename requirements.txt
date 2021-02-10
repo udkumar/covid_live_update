@@ -15,7 +15,7 @@ setuptools==41.0.0
 
 certifi==0.0.8
 chardet==1.0.1
-requests==0.11.1
+requests==2.20.0
 
 Flask==0.10.1
 gunicorn==19.3.0
